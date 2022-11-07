@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <TestTask2 msg="Welcome to Your Vue.js App"/> -->
+    <MainWrapper/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import TestTask1 from './components/TestTask1.vue'
+// import TestTask2 from './components/TestTask2.vue'
+import MainWrapper from "./components/v-main-wrapper.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainWrapper
+
   }
 }
 </script>
@@ -23,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
