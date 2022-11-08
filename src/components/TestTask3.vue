@@ -217,10 +217,10 @@ export default {
     checkState(currentState) {
       //проверка текущего состояния на соответсвие последовательности
       if (currentState == this.acceptableStates[this.currentStep]) {
-        var ffasf = Math.floor(
+        var completePercent = Math.floor(
           ((this.currentStep + 1) / this.acceptableStates.length) * 100
         );
-        document.getElementById("progressID").style.width = ffasf + "%";
+        document.getElementById("progressID").style.width = completePercent + "%";
         if (this.currentStep == this.acceptableStates.length - 1) {
           this.checkStr = "конец";
           this.button_information = "Начать заново";
