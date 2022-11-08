@@ -65,7 +65,7 @@
         <div class="col-md-4">
           <div class="paramert_list">
             Список параметров:
-            <div class="dg row">
+            <div class="parametr_row row">
               <p>Питание</p>
               <div
                 @click="updateThumler(0)"
@@ -73,7 +73,7 @@
               ></div>
             </div>
 
-            <div class="dg row">
+            <div class="parametr_row row">
               <p>Контроль ламп</p>
               <div
                 @click="updateThumler(-1)"
@@ -84,14 +84,14 @@
             <p class="L_1">Лампа №1 {{ L_1 ? "1" : "0" }}</p>
             <p class="L_2">Лампа №2 {{ L_2 ? "1" : "0" }}</p>
             <p class="L_3">Лампа №3 {{ L_3 ? "1" : "0" }}</p>
-            <div class="dg row">
+            <div class="parametr_row row">
               <p>Переключатель №1</p>
               <div
                 @click="updateThumler(1)"
                 v-bind:class="{ switch_on: P_1, switch_btn: !P_1 }"
               ></div>
             </div>
-            <div class="dg row">
+            <div class="parametr_row row">
               <p>Переключатель №2</p>
               <div
                 @click="updateThumler(2)"
@@ -222,10 +222,10 @@ export default {
 .content_block {
   margin-top: 30px;
 }
-.dg {
+.parametr_row {
   width: auto;
 }
-.dg p {
+.parametr_row p {
   margin: 5px;
   padding: 0px;
   width: auto;

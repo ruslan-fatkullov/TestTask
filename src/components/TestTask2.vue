@@ -2,11 +2,11 @@
   <div class="task2">
     <nav-bar/>
     <h1>Тестовое задание №2</h1>
-    <!-- <div class="main_frame" v-on:mouseover ="updateCounter()">{{count}}</div> -->
     <div class="container">
       <div class="row">
         <div class="col">
           <p>Наведите курсор</p>
+          <!-- функции обработчики действий мыши -->
           <div
             class="frame first_frame"
             v-on:mousemove="updateCounter()"
@@ -17,6 +17,7 @@
         </div>
         <div class="col">
           <p>Нажмите</p>
+          <!-- функции обработчики действий мыши -->
           <div
             class="frame second_frame"
             v-on:mousedown="change_text()"
@@ -28,6 +29,7 @@
         </div>
         <div class="col">
           <p>Наведите курсор</p>
+          <!-- функции обработчики действий мыши -->
           <div
             class="frame"
             v-on:mouseover="fds()"

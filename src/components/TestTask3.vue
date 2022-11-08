@@ -91,9 +91,7 @@
                   aria-valuenow="15"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                >
-                  <!-- {{ currentProgress }} -->
-                </div>
+                ></div>
               </div>
             </div>
             <div class="action_button">
@@ -153,7 +151,6 @@ export default {
   },
   data() {
     return {
-      //   tumb : [false,false,false,false,false,false,false],
       tumb1: false,
       tumb2: false,
       tumb3: false,
@@ -169,8 +166,6 @@ export default {
       checkStr: "",
       //   допустимые значения состояний в порядке последовательности
       acceptableStates: [64, 0, 32, 33, 1, 5, 4, 12, 8, 0, 16, 0, 32],
-      //прогресс прохождения тренажера
-      currentProgress: 0,
 
       button_information: "Сброс",
       sequenceString: "",
@@ -182,7 +177,6 @@ export default {
   methods: {
     updateThumler(choosen_thumler) {
       //обработка состояний тумблеров
-      // this.tumb[choosen_thumler] = !this.tumb[choosen_thumler]
       switch (choosen_thumler) {
         case 1:
           this.tumb1 = !this.tumb1;
@@ -263,6 +257,7 @@ export default {
       this.lampActive = false;
     },
     hideOrShowSequence() {
+      //  скрыть или показать подсказку
       if (this.sequenceString == "") {
         (this.sequenceString =
           "АЭР ПИТ -> АЭР ПИТ -> АКК1 -> ПРЕОБРАЗ 2 -> АКК1 -> ГЕН.ТОКА ЛЕВ -> ПРЕОБРАЗ 2 -> ПРЕОБРАЗ 1 -> ГЕН.ТОКА ЛЕВ -> ПРЕОБРАЗ 1 -> АКК2 -> АКК2 -> АКК1"),
